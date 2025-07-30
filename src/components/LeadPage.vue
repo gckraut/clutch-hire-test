@@ -2,7 +2,7 @@
   <div class="hello">
     <h1>{{ msg }}</h1>
     <h2>{{ msg2 }}</h2>
-    <form v-on:submit.prevent="submitForm" method="post" id="myForm">
+    <form v-on:submit.prevent="submitForm" v-show="notsubmitted" method="post" id="myForm">
       <div>
         <h3>First Name</h3>
         <input
@@ -62,7 +62,8 @@ export default defineComponent({
      company:null
     },
     msg: 'Have us reach out',
-    msg2: ''
+    msg2: '',
+    notsubmitted: true
    }
   },
   methods: {
@@ -72,9 +73,10 @@ export default defineComponent({
         console.log('Form submitted successfully:', response.data);
         this.msg = 'Thank you'; // This will automatically update the displayed text
         this.msg2 = 'We will contact you shortly';
+        this.notsubmitted = false;
         // Handle success, e.g., show a success message
-        setTimeout(() => {this.msg = ""; this.msg2 = ""; this.formData.first = null; this.formData.last = null; this.formData.email = null;
-         this.formData.phone = null;  this.formData.company = null; }, 5000);
+        setTimeout(() => {this.msg = "Have us reach out"; this.msg2 = ""; this.formData.first = null; this.formData.last = null; this.formData.email = null;
+         this.formData.phone = null;  this.formData.company = null; this.notsubmitted = true; }, 5000);
       } catch (error) {
         console.error('Error submitting form:', error);
           this.msg = 'Error submitting form';

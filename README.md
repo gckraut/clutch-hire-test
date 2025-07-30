@@ -71,4 +71,6 @@ I am submitting an initial submission prior to midnight tonight. I am unsure of 
 - Correct handling of success and error messages, including hiding the form per the design
 - Overlay of form labels on input fields
 - Fine-tuning of margins and formatting
-- Re-enabling of Prettifier code validation
+- Re-enabling of Prettier code validation
+
+I can continue work on 7/30 to address these issues, depending on when the specific deadline would be.
