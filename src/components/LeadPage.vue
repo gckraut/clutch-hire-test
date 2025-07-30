@@ -110,15 +110,15 @@ input {
     border-radius: 3.6px;
 }
 h3 {
-  margin: 6px 0 0;
-  padding-left: 6px;
+  margin: 6px 0 6px;
+  padding: 0 6px;
   font-family: 'ABeeZee', sans-serif;
   font-size: 12px;
   color: #006315;
   position: relative;
-  top: 0.5em; 
+  top: 1em; 
   background-color: #ffffff;
-  width: 120px;
+  width: max-content;
 }
 ul {
   list-style-type: none;
@@ -141,7 +141,8 @@ button {
     padding: 10.22px 37.5px 8.61px 37.5px;
 }
 div.button {
-    margin-top: 10px;
-    align: right;
+    margin-top: 20px;
+    margin-right: 60px;
+    float: right;
 }
 </style>
