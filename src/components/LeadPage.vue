@@ -110,10 +110,15 @@ input {
     border-radius: 3.6px;
 }
 h3 {
-  margin: 10px 0 0;
+  margin: 6px 0 0;
+  padding-left: 6px;
   font-family: 'ABeeZee', sans-serif;
   font-size: 12px;
   color: #006315;
+  position: relative;
+  top: 0.5em; 
+  background-color: #ffffff;
+  width: 120px;
 }
 ul {
   list-style-type: none;
