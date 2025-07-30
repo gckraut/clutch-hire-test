@@ -110,7 +110,7 @@ input {
     border-radius: 3.6px;
 }
 h3 {
-  margin: 6px 0 6px;
+  margin: 6px 12px 6px;
   padding: 0 6px;
   font-family: 'ABeeZee', sans-serif;
   font-size: 12px;
@@ -144,5 +144,8 @@ div.button {
     margin-top: 20px;
     margin-right: 60px;
     float: right;
+}
+div.hello {
+    margin-left: 35.76px;
 }
 </style>
