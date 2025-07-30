@@ -63,3 +63,12 @@ Replace the sample data with actual user input when making a submission. [You ca
 2. **Submit Data:** On submission, the form data is sent to the API endpoint using the provided API key.
 3. **Thank You Message:** A thank you message is displayed for 5 seconds after submission.
 4. **Repeat Process:** The form resets for the next user submission.
+
+
+Notes as of 7/29/25 - Gordon Krauthamer
+
+I am submitting an initial submission prior to midnight tonight. I am unsure of the exact time for the final deadline, so remaining work would include:
+- Correct handling of success and error messages, including hiding the form per the design
+- Overlay of form labels on input fields
+- Fine-tuning of margins and formatting
+- Re-enabling of Prettifier code validation
